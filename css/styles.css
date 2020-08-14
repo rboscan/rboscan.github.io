@@ -120,8 +120,8 @@ li.nav-item a.active {
 }
 
 img#header {
-    height: 57.5vh;
     width: 100vw;
+    height: 50vh;
     position: relative;
     transition: 0.5s;
 }
@@ -134,7 +134,7 @@ img#header {
 }
 
 .image-box h1 {
-    font-size: 75px;
+    font-size: 5em;
     color: white;
     font-weight: 1000;
     font-family: 'Helvetica', 'Arial', sans-serif;
@@ -143,7 +143,7 @@ img#header {
 }
 
 .image-box h2 {
-    font-size: 45px;
+    font-size: 3.5em;
     color: white;
     font-weight: 1000;
     font-family: 'Helvetica', 'Arial', sans-serif;
@@ -152,23 +152,23 @@ img#header {
 
 .col-sm.description {
     color: black;
-    padding-top: 10px;
-    font-size: 30px;
+    font-size: 2.75em;
     font-family: 'Helvetica', 'Arial', sans-serif;
-    margin: 0 6.5% 2.5% 6.5%;
-    text-align: match-parent;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .col-sm.description strong {
     color: black;
-    padding-top: 10px;
-    font-size: 30px;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-weight: 700;
 }
 
-#logocolumn{
-    padding-top: 5%;
+#logocolumn {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #smallbig {
@@ -182,8 +182,7 @@ img#header {
 }
 
 #company-wrapper {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 0 10vh 0 10vh;
 }
 
 /* Index/Main Formatting End */
@@ -191,12 +190,14 @@ img#header {
 /* About Us Formatting Start*/
 
 #main-about {
-    padding: 10vh 0 0 0;
+    padding: 10vh 10vh 0 10vh;
 }
+
+#about-wrapper {}
 
 #main-about h1 {
     text-align: left;
-    font-size: 50px;
+    font-size: 5em;
     color: rgba(18, 2, 123);
     font-family: 'Helvetica', 'Arial', sans-serif;
     border-bottom: 3px solid;
@@ -206,34 +207,23 @@ img#header {
 
 #main-about p {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 25px;
-    text-align: left;
+    font-size: 3em;
+    text-align: center;
 }
 
 #main-about img {
-    float: left;
-    text-align: center;
-    height: 40%;
-    width: 30%;
-    min-width: 200px;
+    width: inherit;
+    height: 50%;
     min-height: 100px;
     margin: 0 4% 2vh 0;
     box-shadow: 10px 10px 5px grey;
 }
 
-.maria {
+.about {
     margin: 2.5vw 0 5vw 0;
 }
 
-.maria i {
-    font-style: italic;
-}
-
-.rafa {
-    margin: 5vw 0 0 0;
-}
-
-.rafa i {
+.about i {
     font-style: italic;
 }
 
@@ -242,31 +232,56 @@ img#header {
 /* Services Formatting Start */
 
 #services-row {
-    padding-top: 19vh;
-    padding-bottom: 66vh;
+    padding: 19vh 10vh 35vh 10vh;
 
 }
 
 #services-row h1 {
     text-align: left;
-    font-size: 50px;
+    font-size: 5em;
     color: rgba(18, 2, 123);
     font-family: 'Helvetica', 'Arial', sans-serif;
     border-bottom: 3px solid;
     border-color: rgba(18, 2, 123);
 }
 
-#services-row h2 {
+#services-row .container {
+    position: relative;
     text-align: center;
-    font-size: 1.75rem;
+    padding: 0;
+    margin: 0;
+}
+
+#services-row .container h2 {
+    text-align: left;
+    font-size: 3.5rem;
     padding-top: 2vh;
-    border-bottom: 3px solid;
-    border-color: rgba(18, 2, 123);
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: rgba(18, 2, 123);
+    font-weight: 700;
 }
 
 #services-row p {
     text-align: justify;
-    font-size: 25px;
+    font-size: 3em;
+}
+
+#services img {
+    margin-top: 1vh;
+    width: inherit;
+    height: 300px;
+    border: 3px solid;
+    border-color: rgba(18, 2, 123);
+}
+
+#shipping img {
+    width: inherit;
+    margin-top: 3vh;
 }
 
 /* Services Formatting End */
@@ -291,12 +306,12 @@ div#contact-us {
     padding: 20px 20px 20px 20px;
     font-family: 'Helvetica', 'Arial', sans-serif;
     display: block;
-    max-width:800px;
+    max-width: 900px;
 }
 
 div#contact-us p {
     color: rgb(255, 255, 255);
-    font-size: 25px;
+    font-size: 2.5em;
     font-weight: 700;
     font-family: 'Helvetica', 'Arial', sans-serif;
     text-align: center;
@@ -309,7 +324,7 @@ form {
 
 .form-row label {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 2em;
     color: rgba(18, 2, 123);
     font-weight: 600;
     font-family: 'Helvetica', 'Arial', sans-serif;
@@ -370,27 +385,42 @@ input:focus.form-control {
     color: rgba(18, 2, 123);
     font-weight: 600;
     font-family: 'Helvetica', 'Arial', sans-serif;
-    display:block;
-}
-
-
-@media (min-width:320px) {
-    /* smartphones, iPhone, portrait 480x320 phones */
+    display: block;
 }
 
 @media (max-width:1700px) {
-    #company-wrapper {
-        padding-top: 0;
+
+
+    #services-row {
+        padding: 19vh 0 35vh 0;
     }
 
-    #main-about {
-        padding: 12vh 0 0 0;
+    /* main formatting */
+
+    .image-box h1 {
+        font-size: 3em;
+        transition: 0.5s;
     }
+
+    .image-box h2 {
+        font-size: 2.75em;
+        transition: 0.5s;
+    }
+
+
+    .col-sm.description {
+        font-size: 1.75em;
+        transition: 0.5s;
+    }
+
+
+    /* main formatting end */
 }
 
 @media screen and (max-width:1400px) {
 
-    /* hi-res laptops and desktops */
+    /* navbar formatting */
+
     .navbar-brand-collapsed {
         display: none;
     }
@@ -434,6 +464,9 @@ input:focus.form-control {
         padding: 10px 5px 10px 5px;
     }
 
+    /* navbar formatting end */
+
+    /* main formatting */
     img#header {
         height: 36.5vh;
         width: 100vw;
@@ -441,27 +474,54 @@ input:focus.form-control {
         transition: 0.5s;
     }
 
-    .col-sm.description {
-        color: black;
-        padding-top: 10px;
-        font-size: 25px;
-        font-family: 'Helvetica', 'Arial', sans-serif;
-        margin: 0 6.5% 2.5% 6.5%;
-        text-align: match-parent;
+    .image-box h1 {
+        font-size: 3em;
+        transition: 0.5s;
     }
 
-    .col-sm.description strong {
-        color: black;
-        padding-top: 10px;
-        font-size: 25px;
-        font-family: 'Helvetica', 'Arial', sans-serif;
-        font-weight: 700;
+    .image-box h2 {
+        font-size: 2.75em;
+        transition: 0.5s;
     }
+
+
+    .col-sm.description {
+        font-size: 1.50em;
+        transition: 0.5s;
+    }
+
+
+    /* main formatting end */
+
+    /* about us formatting start */
+
+    #main-about {
+        padding: 10vh 10vh 0 10vh;
+    }
+
+    /* about us formatting end */
+
+    /* services formatting */
+    #services-row {
+        padding: 0 10vh 0 10vh;
+    }
+    #services-row .container h2 {
+        text-align: left;
+        font-size: 2.5rem;
+        z-index: 1;
+        position: absolute;
+    }
+    #services-row p {
+        text-align: justify;
+        font-size: 2.5em;
+    }
+    /* services formatting end */
 }
+
 
 @media screen and (max-width:1025px) {
 
-    /* big landscape tablets, laptops, and desktops */
+    /* navbar formatting */
     .navbar {
         position: relative;
     }
@@ -474,36 +534,68 @@ input:focus.form-control {
         margin-left: 30px;
     }
 
+    /* navbar formatting end */
+
+    /* main formatting */
     .image-box h1 {
-        font-size: 35px;
+        font-size: 2.5em;
         transition: 0.5s;
     }
 
     .image-box h2 {
-        font-size: 25px;
+        font-size: 2em;
         transition: 0.5s;
     }
 
+    .col-sm.description {
+        font-size: 1.5em;
+        transition: 0.5s;
+    }
+
+    #company-wrapper {
+        padding: 5vh 5vh 0 5vh;
+    }
+
+    /* main formatting end */
+    /* about us formatting start */
+
+    #main-about {
+        padding: 10vh 5vh 0 5vh;
+    }
+
+    #main-about {
+        padding: 10vh 5vh 0 5vh;
+    }
+
+    #main-about h1 {
+        font-size: 3em
+    }
+
+    #main-about p {
+        font-size: 1.75em;
+    }
+
+    /* about us formatting end */
+    /* services formatting */
+    #services-row h1 {
+        font-size: 3em;
+
+    }
+
+    #services-row {
+        padding: 0 5vh 0 5vh;
+    }
+    /* services formatting end */
 }
 
 @media screen and (max-width:992px) {
-    .navbar-nav {
-        background: white;
-    }
+
 
     .navbar-brand-collapsed {
         display: block;
         position: absolute;
         left: 44.5%;
         height: 45px;
-    }
-
-    .navbar-light .navbar-nav .nav-link {
-        font-size: 4vw;
-    }
-
-    .navbar-light .navbar-nav .nav-link:hover {
-        font-size: 4vw;
     }
 
     div ul.navbar-nav img {
@@ -513,6 +605,7 @@ input:focus.form-control {
 
 @media screen and (max-width:991px) {
 
+    /* navbar formatting */
     .navbar-light .navbar-nav .nav-link {
         font-size: 3.25vw;
     }
@@ -520,17 +613,68 @@ input:focus.form-control {
     .navbar-light .navbar-nav .nav-link:hover {
         font-size: 4vw;
     }
+
+    .navbar-nav {
+        background: white;
+    }
+
+    /* navbar formatting end */
+
+    /* main formatting */
+    .col-sm.description {
+        font-size: 1.25em;
+        transition: 0.5s;
+    }
+
+    .col-sm.description strong {
+        font-size: 1.25em;
+        transition: 0.5s;
+    }
+
+    /* main formatting end */
+
+    /* about us formatting start */
+
+    #main-about {
+        padding: 10vh 5vh 0 5vh;
+    }
+
+    #main-about h1 {
+        font-size: 3em
+    }
+
+    #main-about p {
+        font-size: 1.75em;
+    }
+
+    /* about us formatting end */
+
+    /* services formatting start */
+
+    #services-row {
+        padding: 0 5vh 0 5vh;
+    }
+
+    /* services formatting end */
+
 }
 
+@media screen and (max-width: 800px){
+    #services-row p {
+        text-align: justify;
+        font-size: 1.75em;
+    }
+    /* services formatting end */
+}
 @media screen and (max-width: 769px) {
 
     .image-box h1 {
-        font-size: 25px;
+        font-size: 2em;
         transition: 0.5s;
     }
 
     .image-box h2 {
-        font-size: 15px;
+        font-size: 1.5em;
         transition: 0.5s;
     }
 
@@ -540,8 +684,6 @@ input:focus.form-control {
 }
 
 @media (max-width: 767px) {
-
-/* @grid-float-breakpoint -1 */
 
     div#contact-us {
         width: 100vw;
@@ -561,7 +703,7 @@ input:focus.form-control {
 @media screen and (max-width: 600px) {
 
     img#header {
-        height: 36.5vh;
+        height: 44vh;
         transition: 0.5s;
     }
 
@@ -569,4 +711,27 @@ input:focus.form-control {
         display: block;
     }
 
+    #main-about {
+        padding: 10vh 0 0 0;
+    }
+
+    #main-about img {
+        height: 300px;
+    }
+    #services-row {
+        padding: 0 0 0 0;
+    }
+
+}
+
+@media screen and (max-width: 519px) {
+    .image-box h1 {
+        font-size: 1.5em;
+        transition: 0.5s;
+    }
+
+    .image-box h2 {
+        font-size: 1em;
+        transition: 0.5s;
+    }
 }
