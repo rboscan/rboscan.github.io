@@ -152,7 +152,7 @@ img#header {
 
 .col-sm.description {
     color: black;
-    font-size: 2.75em;
+    font-size: 2.5em;
     font-family: 'Helvetica', 'Arial', sans-serif;
     display: flex;
     align-items: center;
@@ -178,7 +178,7 @@ img#header {
     margin-right: auto;
     display: block;
     min-height: 265px;
-    min-width: 343px;
+    width: inherit;
 }
 
 #company-wrapper {
@@ -193,8 +193,6 @@ img#header {
     padding: 10vh 10vh 0 10vh;
 }
 
-#about-wrapper {}
-
 #main-about h1 {
     text-align: left;
     font-size: 5em;
@@ -207,7 +205,7 @@ img#header {
 
 #main-about p {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 3em;
+    font-size: 2.25em;
     text-align: center;
 }
 
@@ -268,7 +266,7 @@ img#header {
 
 #services-row p {
     text-align: justify;
-    font-size: 3em;
+    font-size: 2.25em;
 }
 
 #services img {
@@ -409,7 +407,7 @@ input:focus.form-control {
 
 
     .col-sm.description {
-        font-size: 1.75em;
+        font-size: 2.25em;
         transition: 0.5s;
     }
 
@@ -505,16 +503,19 @@ input:focus.form-control {
     #services-row {
         padding: 0 10vh 0 10vh;
     }
+
     #services-row .container h2 {
         text-align: left;
-        font-size: 2.5rem;
+        font-size: 2em;
         z-index: 1;
         position: absolute;
     }
+
     #services-row p {
         text-align: justify;
-        font-size: 2.5em;
+        font-size: 2em;
     }
+
     /* services formatting end */
 }
 
@@ -552,11 +553,18 @@ input:focus.form-control {
         transition: 0.5s;
     }
 
+
+    .col-sm.description {
+        font-size: 1.5em;
+        transition: 0.5s;
+    }
+
     #company-wrapper {
         padding: 5vh 5vh 0 5vh;
     }
 
     /* main formatting end */
+
     /* about us formatting start */
 
     #main-about {
@@ -568,7 +576,7 @@ input:focus.form-control {
     }
 
     #main-about h1 {
-        font-size: 3em
+        font-size: 3em;
     }
 
     #main-about p {
@@ -576,15 +584,20 @@ input:focus.form-control {
     }
 
     /* about us formatting end */
+
     /* services formatting */
     #services-row h1 {
         font-size: 3em;
+    }
 
+    #services-row p {
+        font-size: 1.75em;
     }
 
     #services-row {
         padding: 0 5vh 0 5vh;
     }
+
     /* services formatting end */
 }
 
@@ -626,11 +639,6 @@ input:focus.form-control {
         transition: 0.5s;
     }
 
-    .col-sm.description strong {
-        font-size: 1.25em;
-        transition: 0.5s;
-    }
-
     /* main formatting end */
 
     /* about us formatting start */
@@ -640,11 +648,11 @@ input:focus.form-control {
     }
 
     #main-about h1 {
-        font-size: 3em
+        font-size: 2em
     }
 
     #main-about p {
-        font-size: 1.75em;
+        font-size: 1.25em;
     }
 
     /* about us formatting end */
@@ -655,17 +663,35 @@ input:focus.form-control {
         padding: 0 5vh 0 5vh;
     }
 
+    #services-row h1 {
+        font-size: 2em;
+    }
+
+    #services-row p {
+        font-size: 1.25em;
+    }
+
     /* services formatting end */
 
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
+
+    /* about us formatting */
+    #main-about p {
+        text-align: justify;
+    }
+
+    /* about us formatting end */
+
+    /* services formatting */
     #services-row p {
         text-align: justify;
-        font-size: 1.75em;
     }
+
     /* services formatting end */
 }
+
 @media screen and (max-width: 769px) {
 
     .image-box h1 {
@@ -702,6 +728,7 @@ input:focus.form-control {
 
 @media screen and (max-width: 600px) {
 
+    /* index formatting */
     img#header {
         height: 44vh;
         transition: 0.5s;
@@ -718,10 +745,40 @@ input:focus.form-control {
     #main-about img {
         height: 300px;
     }
+
+    #main-about p {
+        font-size: 1em;
+    }
+
+    /* index formatting end */
+
+    /* services formatting */
     #services-row {
         padding: 0 0 0 0;
     }
 
+    #services-row .container h2{
+        top: 20%;
+        transition: 0.5s;
+        background-color: rgba(255, 255, 255, 0.75);
+        padding-top: 0;
+        border-radius:5px;
+    }
+    #services-row p {
+        font-size: 1em;
+        position: absolute;
+        top:60%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        color: rgba(18,2,123);
+        font-weight:700;
+        width:75%;
+        background-color: rgba(255, 255, 255, 0.75);
+        transition:0.5s;
+        border-radius:5px;
+    }
+
+    /* services formatting end */
 }
 
 @media screen and (max-width: 519px) {
