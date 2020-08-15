@@ -74,7 +74,7 @@ ul.navbar-nav {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: black;
+    color: rgba(18, 2, 123);
     background-color: rgba(255, 255, 255, 0);
     border-radius: 0;
     border-color: rgba(255, 255, 255, 0);
@@ -106,6 +106,23 @@ li.nav-item a.active {
     background-color: rgba(18, 2, 123);
     cursor: pointer;
     padding: 10px 5px 10px 5px;
+}
+
+span.navbar-text {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    font-size: 1.25vw;
+}
+
+span.navbar-text h1 {
+    color: rgba(18, 2, 123);
+    font-weight: 700;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#logo-contact2 {
+    display: none;
 }
 
 /* Navbar Formatting End */
@@ -280,6 +297,7 @@ img#header {
 #shipping img {
     width: inherit;
     margin-top: 3vh;
+    padding-left: 5vh;
 }
 
 /* Services Formatting End */
@@ -375,7 +393,7 @@ input:focus.form-control {
 
 #footer {
     width: 100%;
-    font-size: 25px;
+    font-size: 3em;
     background-color: grey;
     text-align: center;
     padding-top: 15px;
@@ -413,8 +431,16 @@ input:focus.form-control {
 
 
     /* main formatting end */
+    
 }
-
+@media screen and (max-width: 1500px){
+    #footer {
+        font-size: 2em;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
 @media screen and (max-width:1400px) {
 
     /* navbar formatting */
@@ -442,7 +468,7 @@ input:focus.form-control {
     nav.navbar.navbar-expand-lg.navbar-light .navbar-toggler {
         padding: 0;
         font-size: 1rem;
-
+        position: absolute;
     }
 
     .navbar-light .navbar-nav .nav-link {
@@ -528,7 +554,7 @@ input:focus.form-control {
     }
 
     .navbar-collapse {
-        margin-top: 20px;
+        margin-top: 50px;
     }
 
     .navbar-light .navbar-toggler {
@@ -597,8 +623,39 @@ input:focus.form-control {
     #services-row {
         padding: 0 5vh 0 5vh;
     }
-
+    #shipping img {
+        padding-left: 2.5vh;
+    }
     /* services formatting end */
+    /* Contact Us Formatting Start */
+
+    div#contact-us {
+        max-width: 600px;
+    }
+
+    div#contact-us p {
+        font-size: 1.75em;
+
+    }
+
+    .form-row label {
+        font-size: 1.5em;
+
+    }
+
+    textarea.form-control {
+        height: 130px;
+    }
+
+    /* Contact Us Formatting End */
+    
+    /* Footer */
+    #footer {
+        font-size: 1.75em;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
 
 @media screen and (max-width:992px) {
@@ -620,15 +677,34 @@ input:focus.form-control {
 
     /* navbar formatting */
     .navbar-light .navbar-nav .nav-link {
-        font-size: 3.25vw;
+        font-size: 1.25em;
     }
 
     .navbar-light .navbar-nav .nav-link:hover {
-        font-size: 4vw;
+        font-size: 1.25em;
     }
 
     .navbar-nav {
         background: white;
+    }
+
+    #logo-contact2 {
+        font-size: 1.25em;
+        display: block;
+        word-spacing: 10px;
+        padding-bottom: 2vh;
+    }
+
+    #logo-contact {
+        display: none;
+    }
+
+    hr#collapsed-navbar-contact-hr {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        border-top: 2px ridge;
+        width: 85vw;
+        border-color: rgba(18, 2, 123);
     }
 
     /* navbar formatting end */
@@ -670,7 +746,6 @@ input:focus.form-control {
     #services-row p {
         font-size: 1.25em;
     }
-
     /* services formatting end */
 
 }
@@ -743,7 +818,7 @@ input:focus.form-control {
     }
 
     #main-about img {
-        height: 300px;
+        height: 185px;
     }
 
     #main-about p {
@@ -757,28 +832,67 @@ input:focus.form-control {
         padding: 0 0 0 0;
     }
 
-    #services-row .container h2{
-        top: 20%;
+    #services-row .container h2 {
+        top: 12.5%;
         transition: 0.5s;
-        background-color: rgba(255, 255, 255, 0.75);
         padding-top: 0;
-        border-radius:5px;
+        border-radius: 5px;
     }
+
     #services-row p {
         font-size: 1em;
         position: absolute;
-        top:60%;
-        left:50%;
+        top: 60%;
+        left: 50%;
         transform: translate(-50%, -50%);
-        color: rgba(18,2,123);
-        font-weight:700;
-        width:75%;
-        background-color: rgba(255, 255, 255, 0.75);
-        transition:0.5s;
-        border-radius:5px;
+        color: rgba(18, 2, 123);
+        font-weight: 700;
+        width: 75%;
+        transition: 0.5s;
+    }
+
+    #services img {
+        border: none;
+        -webkit-filter: blur(3.5px);
+        -moz-filter: blur(3.5px);
+        -o-filter: blur(3.5px);
+        -ms-filter: blur(3.5px);
+        filter: blur(3.5px);
+    }
+    #shipping img {
+        padding-left: 1vh;
     }
 
     /* services formatting end */
+    /* Contact Us Formatting Start */
+
+    div#contact-us {
+        max-width: 500px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    div#contact-us p {
+        font-size: 1.25em;
+
+    }
+
+    .form-row label {
+        font-size: 1em;
+
+    }
+
+    textarea.form-control {
+        height: 80px;
+    }
+
+    /* Contact Us Formatting End */
+    /* Footer */
+    #footer {
+        font-size: 1.25em;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
 
 @media screen and (max-width: 519px) {
