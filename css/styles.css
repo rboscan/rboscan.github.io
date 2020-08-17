@@ -66,11 +66,14 @@ nav.navbar.navbar-expand-lg.navbar-light.scrolled {
 /* Button Formatting */
 
 .navbar {
-    position: relative;
+    top: 0;
+    position: sticky;
 }
 
 ul.navbar-nav {
     width: 100vw;
+    position: sticky;
+    top: 0;
 }
 
 .navbar-light .navbar-nav .nav-link {
