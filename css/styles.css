@@ -794,6 +794,11 @@ input:focus.form-control {
     }
 }
 
+@media screen and (max-width: 400px){
+    #logo-contact2{
+        font-size: 0.95em;
+    }
+}
 /* Safari 11+ */
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
