@@ -906,3 +906,14 @@ input:focus.form-control {
         transition: 0.5s;
     }
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    /* Safari and Chrome */
+    .myClass {
+    }
+    
+    /* Safari only override */
+    ::i-block-chrome,ul.navbar-nav {
+        position: fixed;
+            }
+    }
