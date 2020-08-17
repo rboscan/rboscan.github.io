@@ -794,19 +794,26 @@ input:focus.form-control {
     }
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    /* Safari and Chrome */
-    .myClass {}
-    /* Safari only override */
-    ::i-block-chrome, ul.navbar-nav {
+/* Safari 11+ */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    ul.navbar-nav { 
         position: fixed;
     }
-}
+}}
 
-@media not all and (min-resolution:.001dpcm) {
-    @media {
-        .safari_only {
-            position: fixed;
-        }
+/* Safari 10.1 */
+@media not all and (min-resolution:.001dpcm){ 
+@supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
+    ul.navbar-nav { 
+        position: fixed;
     }
-}
+}}
+
+/* Safari 6.1-10.0 (not 10.1) */
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0){ 
+@media {
+    ul.navbar-nav { 
+        position: fixed;
+    }
+}}
