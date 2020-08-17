@@ -404,7 +404,7 @@ input:focus.form-control {
 
 @media (max-width:1700px) {
     #services-row {
-        padding: 19vh 0 35vh 0;
+        padding: 19vh 10vh 35vh 10vh;
     }
     /* main formatting */
     .image-box h1 {
