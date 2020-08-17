@@ -66,12 +66,14 @@ nav.navbar.navbar-expand-lg.navbar-light.scrolled {
 /* Button Formatting */
 
 .navbar {
-    position: relative;
+    top: 0;
+    position: sticky;
 }
 
 ul.navbar-nav {
     width: 100vw;
-    position: fixed;
+    position: sticky;
+    top: 0;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -249,7 +251,6 @@ img#header {
 
 #services-row {
     padding: 19vh 10vh 35vh 10vh;
-
 }
 
 #services-row h1 {
@@ -314,7 +315,6 @@ img#header {
     width: 100vw;
     padding: 25vh 0vh 25vh 0vh;
 }
-
 
 div#contact-us {
     position: relative;
@@ -406,35 +406,26 @@ input:focus.form-control {
 }
 
 @media (max-width:1700px) {
-
-
     #services-row {
-        padding: 19vh 0 35vh 0;
+        padding: 19vh 10vh 35vh 10vh;
     }
-
     /* main formatting */
-
     .image-box h1 {
         font-size: 3em;
         transition: 0.5s;
     }
-
     .image-box h2 {
         font-size: 2.75em;
         transition: 0.5s;
     }
-
-
     .col-sm.description {
         font-size: 2.25em;
         transition: 0.5s;
     }
-
-
     /* main formatting end */
-    
 }
-@media screen and (max-width: 1500px){
+
+@media screen and (max-width: 1500px) {
     #footer {
         font-size: 2em;
         text-align: center;
@@ -442,14 +433,12 @@ input:focus.form-control {
         padding-bottom: 15px;
     }
 }
+
 @media screen and (max-width:1400px) {
-
     /* navbar formatting */
-
     .navbar-brand-collapsed {
         display: none;
     }
-
     nav.navbar.navbar-expand-lg.navbar-light {
         height: 75px;
         padding-bottom: 10px;
@@ -457,7 +446,6 @@ input:focus.form-control {
         width: 100vw;
         transition: 0;
     }
-
     nav.navbar.navbar-expand-lg.navbar-light.scrolled {
         height: 75px;
         padding-bottom: 10px;
@@ -465,32 +453,26 @@ input:focus.form-control {
         width: 100vw;
         transition: 0;
     }
-
     nav.navbar.navbar-expand-lg.navbar-light .navbar-toggler {
         padding: 0;
         font-size: 1rem;
         position: absolute;
     }
-
     .navbar-light .navbar-nav .nav-link {
         font-size: 1.25vw;
         padding: 15px 40px 15px 40px;
     }
-
     .navbar-light .navbar-nav .nav-link:hover {
         font-size: 1.25vw;
         padding: 15px 40px 15px 40px;
     }
-
     li.nav-item a.active {
         color: white;
         background-color: rgba(18, 2, 123);
         cursor: pointer;
         padding: 10px 5px 10px 5px;
     }
-
     /* navbar formatting end */
-
     /* main formatting */
     img#header {
         height: 36.5vh;
@@ -498,129 +480,95 @@ input:focus.form-control {
         position: relative;
         transition: 0.5s;
     }
-
     .image-box h1 {
         font-size: 3em;
         transition: 0.5s;
     }
-
     .image-box h2 {
         font-size: 2.75em;
         transition: 0.5s;
     }
-
-
     .col-sm.description {
         font-size: 1.50em;
         transition: 0.5s;
     }
-
-
     /* main formatting end */
-
     /* about us formatting start */
-
     #main-about {
         padding: 10vh 10vh 0 10vh;
     }
-
     /* about us formatting end */
-
     /* services formatting */
     #services-row {
         padding: 0 10vh 0 10vh;
     }
-
     #services-row .container h2 {
         text-align: left;
         font-size: 2em;
         z-index: 1;
         position: absolute;
     }
-
     #services-row p {
         text-align: justify;
         font-size: 2em;
     }
-
     /* services formatting end */
 }
 
-
 @media screen and (max-width:1025px) {
-
     /* navbar formatting */
     .navbar {
         position: relative;
     }
-
     .navbar-collapse {
         margin-top: 50px;
     }
-
     .navbar-light .navbar-toggler {
         margin-left: 30px;
     }
-
     /* navbar formatting end */
-
     /* main formatting */
     .image-box h1 {
         font-size: 2.5em;
         transition: 0.5s;
     }
-
     .image-box h2 {
         font-size: 2em;
         transition: 0.5s;
     }
-
     .col-sm.description {
         font-size: 1.5em;
         transition: 0.5s;
     }
-
-
     .col-sm.description {
         font-size: 1.5em;
         transition: 0.5s;
     }
-
     #company-wrapper {
         padding: 5vh 5vh 0 5vh;
     }
-
     /* main formatting end */
-
     /* about us formatting start */
-
     #main-about {
         padding: 10vh 5vh 0 5vh;
     }
-
     #main-about {
         padding: 10vh 5vh 0 5vh;
     }
-
     #main-about h1 {
         font-size: 3em;
     }
-
     #main-about p {
         font-size: 1.75em;
     }
-
     /* about us formatting end */
-
     /* services formatting */
     #services-row h1 {
         font-size: 3em;
     }
-
     #services-row p {
         font-size: 1.75em;
     }
-
     #services-row {
         padding: 0 5vh 0 5vh;
     }
@@ -629,27 +577,19 @@ input:focus.form-control {
     }
     /* services formatting end */
     /* Contact Us Formatting Start */
-
     div#contact-us {
         max-width: 600px;
     }
-
     div#contact-us p {
         font-size: 1.75em;
-
     }
-
     .form-row label {
         font-size: 1.5em;
-
     }
-
     textarea.form-control {
         height: 130px;
     }
-
     /* Contact Us Formatting End */
-    
     /* Footer */
     #footer {
         font-size: 1.75em;
@@ -660,46 +600,37 @@ input:focus.form-control {
 }
 
 @media screen and (max-width:992px) {
-
-
     .navbar-brand-collapsed {
         display: block;
         position: absolute;
         left: 44.5%;
         height: 45px;
     }
-
     div ul.navbar-nav img {
         display: none;
     }
 }
 
 @media screen and (max-width:991px) {
-
     /* navbar formatting */
     .navbar-light .navbar-nav .nav-link {
         font-size: 1.25em;
     }
-
     .navbar-light .navbar-nav .nav-link:hover {
         font-size: 1.25em;
     }
-
     .navbar-nav {
         background: white;
     }
-
     #logo-contact2 {
         font-size: 1.25em;
         display: block;
         word-spacing: 10px;
         padding-bottom: 2vh;
     }
-
     #logo-contact {
         display: none;
     }
-
     hr#collapsed-navbar-contact-hr {
         margin-top: 0.5em;
         margin-bottom: 0.5em;
@@ -707,95 +638,72 @@ input:focus.form-control {
         width: 85vw;
         border-color: rgba(18, 2, 123);
     }
-
     /* navbar formatting end */
-
     /* main formatting */
     .col-sm.description {
         font-size: 1.25em;
         transition: 0.5s;
     }
-
     /* main formatting end */
-
     /* about us formatting start */
-
     #main-about {
         padding: 10vh 5vh 0 5vh;
     }
-
     #main-about h1 {
         font-size: 2em
     }
-
     #main-about p {
         font-size: 1.25em;
     }
-
     /* about us formatting end */
-
     /* services formatting start */
-
     #services-row {
         padding: 0 5vh 0 5vh;
     }
-
     #services-row h1 {
         font-size: 2em;
     }
-
     #services-row p {
         font-size: 1.25em;
     }
     /* services formatting end */
-
 }
 
 @media screen and (max-width: 800px) {
-
     /* about us formatting */
     #main-about p {
         text-align: justify;
     }
-
     /* about us formatting end */
-
     /* services formatting */
     #services-row p {
         text-align: justify;
     }
-
     /* services formatting end */
 }
 
 @media screen and (max-width: 769px) {
-
     .image-box h1 {
         font-size: 2em;
         transition: 0.5s;
     }
-
     .image-box h2 {
         font-size: 1.5em;
         transition: 0.5s;
     }
-
     .footer {
         height: 60px;
     }
 }
 
 @media (max-width: 767px) {
-
     div#contact-us {
         width: 100vw;
     }
-
     input.form-control {
         width: 100%;
         transition: 0.5s;
     }
-
     .navbar-fixed-top {
         position: relative;
         top: auto;
@@ -803,43 +711,34 @@ input:focus.form-control {
 }
 
 @media screen and (max-width: 600px) {
-
     /* index formatting */
     img#header {
         height: 44vh;
         transition: 0.5s;
     }
-
     #smallbig {
         display: block;
     }
-
     #main-about {
         padding: 10vh 0 0 0;
     }
-
     #main-about img {
         height: 185px;
     }
-
     #main-about p {
         font-size: 1em;
     }
-
     /* index formatting end */
-
     /* services formatting */
     #services-row {
         padding: 0 0 0 0;
     }
-
     #services-row .container h2 {
         top: 12.5%;
         transition: 0.5s;
         padding-top: 0;
         border-radius: 5px;
     }
-
     #services-row p {
         font-size: 1em;
         position: absolute;
@@ -851,7 +750,6 @@ input:focus.form-control {
         width: 75%;
         transition: 0.5s;
     }
-
     #services img {
         border: none;
         -webkit-filter: blur(3.5px);
@@ -863,29 +761,21 @@ input:focus.form-control {
     #shipping img {
         padding-left: 1vh;
     }
-
     /* services formatting end */
     /* Contact Us Formatting Start */
-
     div#contact-us {
         max-width: 500px;
         padding: 10px 10px 10px 10px;
     }
-
     div#contact-us p {
         font-size: 1.25em;
-
     }
-
     .form-row label {
         font-size: 1em;
-
     }
-
     textarea.form-control {
         height: 80px;
     }
-
     /* Contact Us Formatting End */
     /* Footer */
     #footer {
@@ -901,9 +791,37 @@ input:focus.form-control {
         font-size: 1.5em;
         transition: 0.5s;
     }
-
     .image-box h2 {
         font-size: 1em;
         transition: 0.5s;
     }
 }
+
+@media screen and (max-width: 400px){
+    #logo-contact2{
+        font-size: 0.95em;
+    }
+}
+/* Safari 11+ */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    ul.navbar-nav { 
+        position: fixed;
+    }
+}}
+
+/* Safari 10.1 */
+@media not all and (min-resolution:.001dpcm){ 
+@supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
+    ul.navbar-nav { 
+        position: fixed;
+    }
+}}
+
+/* Safari 6.1-10.0 (not 10.1) */
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0){ 
+@media {
+    ul.navbar-nav { 
+        position: fixed;
+    }
+}}
