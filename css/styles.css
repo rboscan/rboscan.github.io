@@ -71,7 +71,6 @@ nav.navbar.navbar-expand-lg.navbar-light.scrolled {
 
 ul.navbar-nav {
     width: 100vw;
-    position: fixed;
 }
 
 .navbar-light .navbar-nav .nav-link {
