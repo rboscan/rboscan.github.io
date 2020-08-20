@@ -734,6 +734,9 @@ input[type="text"]:after {
 
     /* main formatting end */
     /* about us formatting start */
+    .about{
+        padding: 0 2.5vh 0 2.5vh;
+    }
     #main-about {
         padding: 10vh 5vh 0 5vh;
     }
@@ -950,7 +953,9 @@ input[type="text"]:after {
     #main-about {
         padding: 10vh 0 0 0;
     }
-
+    #company-wrapper{
+        padding: 5vh 2.5vh 0 2.5vh;
+    }
     #main-about img {
         height: 185px;
     }
