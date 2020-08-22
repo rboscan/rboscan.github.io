@@ -17,7 +17,7 @@ body div.header {
 /* Navbar Formatting Start */
 
 
-nav.navbar.navbar-expand-lg.navbar-light {
+.navbar {
     background-color: rgba(255, 255, 255, 0);
     height: 95px;
     padding-bottom: 10px;
@@ -26,7 +26,7 @@ nav.navbar.navbar-expand-lg.navbar-light {
     transition: 0.5s;
 }
 
-nav.navbar.navbar-expand-lg.navbar-light.scrolled {
+.navbar.scrolled {
     background-color: rgb(255, 255, 255);
     padding-bottom: 10px;
     padding-top: 20px;
@@ -607,7 +607,7 @@ input[type="text"]:after {
         display: none;
     }
 
-    nav.navbar.navbar-expand-lg.navbar-light {
+    .navbar {
         height: 75px;
         padding-bottom: 10px;
         padding-top: 10px;
@@ -615,7 +615,7 @@ input[type="text"]:after {
         transition: 0;
     }
 
-    nav.navbar.navbar-expand-lg.navbar-light.scrolled {
+    .navbar.scrolled {
         height: 75px;
         padding-bottom: 10px;
         padding-top: 10px;
@@ -623,7 +623,7 @@ input[type="text"]:after {
         transition: 0;
     }
 
-    nav.navbar.navbar-expand-lg.navbar-light .navbar-toggler {
+    .navbar .navbar-toggler {
         padding: 0;
         font-size: 1rem;
         position: absolute;
@@ -812,8 +812,14 @@ input[type="text"]:after {
 }
 
 @media screen and (max-width:991px) {
+    .navbar{
+        padding-top: 30px;
+    }
+    .navbar.scrolled{
+        padding-top: 30px;
+    }
     div ul.navbar-nav{
-        margin-top:55px;
+        margin-top: 55px;
     }
     div ul.navbar-nav img {
         display: none;
