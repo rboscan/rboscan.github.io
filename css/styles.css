@@ -67,7 +67,6 @@ nav.navbar.navbar-expand-lg.navbar-light.scrolled {
 
 .navbar {
     top: 0;
-    position: sticky;
 }
 
 ul.navbar-nav {
@@ -140,8 +139,8 @@ span.navbar-text h1 {
 }
 
 img#header {
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
+    height: 55vh;
     position: relative;
     transition: 0.5s;
 }
@@ -226,7 +225,7 @@ img#header {
 #main-about p {
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 2.25em;
-    text-align: center;
+    text-align: justify;
 }
 
 #main-about img {
@@ -289,11 +288,9 @@ img#header {
 }
 
 #services img {
-    margin-top: 1vh;
+    margin-top: 2vh;
     width: inherit;
     height: 300px;
-    border: 3px solid;
-    border-color: rgba(18, 2, 123);
 }
 
 #shipping img {
@@ -318,15 +315,14 @@ img#header {
 
 div#contact-us {
     position: relative;
-    backdrop-filter: blur(15px);
-    background-color: grey;
+    backdrop-filter: blur(10px);
+    background-color: rgba(107, 107, 107, 0.85);
     padding: 20px 20px 20px 20px;
     font-family: 'Helvetica', 'Arial', sans-serif;
     display: block;
     max-width: 900px;
     border-radius: 5px;
 }
-
 div#contact-us p {
     color: rgba(18, 2, 123);
     font-size: 2.5em;
@@ -394,23 +390,23 @@ input:focus.form-control {
     color: black;
 }
 
-.document-upload{
+.document-upload {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 20px;
 }
 
-.document-upload button{
+.document-upload button {
     font-size: 1.125em;
 }
 
-.document-upload button:hover{
+.document-upload button:hover {
     font-size: 1.125em;
-    background-color:rgba(18, 2, 123);
+    background-color: rgba(18, 2, 123);
 }
 
-.document-upload label{
+.document-upload label {
     padding-right: 20px;
     color: rgba(18, 2, 123);
     font-size: 1.5em;
@@ -429,6 +425,7 @@ input[type="text"]:after {
     outline: 0;
     background: transparent;
 }
+
 #form-row input {
     border: 0;
     outline: 0;
@@ -449,9 +446,10 @@ input[type="text"]:after {
     justify-content: center;
 }
 
-.center-button button:hover{
-    background-color:rgba(18, 2, 123);
+.center-button button:hover {
+    background-color: rgba(18, 2, 123);
 }
+
 /* Contact Us Formatting End */
 
 /* Footer */
@@ -578,11 +576,31 @@ input[type="text"]:after {
     }
 
     .col-sm.description {
-        font-size: 2.25em;
+        font-size: 2em;
         transition: 0.5s;
     }
-
     /* main formatting end */
+    /* about us formatting start */
+    #main-about h1{
+        font-size: 4em;
+    }
+    #main-about p {
+        font-size: 1.75em
+    }
+    /* about us formatting end */
+    /* services formatting */
+    #services-row h1{
+        font-size: 4em
+    }
+    #services-row .container h2 {
+        font-size: 1.75em;
+    }
+
+    #services-row p {
+        font-size: 1.75em;
+    }
+
+    /* services formatting end */
 }
 
 @media screen and (max-width: 1500px) {
@@ -698,10 +716,6 @@ input[type="text"]:after {
         position: relative;
     }
 
-    .navbar-collapse {
-        margin-top: 50px;
-    }
-
     .navbar-light .navbar-toggler {
         margin-left: 30px;
     }
@@ -734,9 +748,10 @@ input[type="text"]:after {
 
     /* main formatting end */
     /* about us formatting start */
-    .about{
+    .about {
         padding: 0 2.5vh 0 2.5vh;
     }
+
     #main-about {
         padding: 10vh 5vh 0 5vh;
     }
@@ -750,7 +765,7 @@ input[type="text"]:after {
     }
 
     #main-about p {
-        font-size: 1.75em;
+        font-size: 1.5em;
     }
 
     /* about us formatting end */
@@ -760,7 +775,7 @@ input[type="text"]:after {
     }
 
     #services-row p {
-        font-size: 1.75em;
+        font-size: 1.5em;
     }
 
     #services-row {
@@ -778,16 +793,18 @@ input[type="text"]:after {
     }
 
     div#contact-us p {
-        font-size: 1.75em;
+        font-size: 1.5em;
     }
 
     .form-row label {
         font-size: 1.5em;
     }
+
     input.form-control {
         font-size: 1.25em;
     }
-    .document-upload label{
+
+    .document-upload label {
         font-size: 1.25em;
     }
 
@@ -806,20 +823,22 @@ input[type="text"]:after {
 }
 
 @media screen and (max-width:992px) {
+
+}
+
+@media screen and (max-width:991px) {
+    div ul.navbar-nav{
+        margin-top:55px;
+    }
+    div ul.navbar-nav img {
+        display: none;
+    }
     .navbar-brand-collapsed {
         display: block;
         position: absolute;
         left: 44.5%;
         height: 45px;
     }
-
-    div ul.navbar-nav img {
-        display: none;
-    }
-}
-
-@media screen and (max-width:991px) {
-
     /* navbar formatting */
     .navbar-light .navbar-nav .nav-link {
         font-size: 1.25em;
@@ -953,9 +972,11 @@ input[type="text"]:after {
     #main-about {
         padding: 10vh 0 0 0;
     }
-    #company-wrapper{
+
+    #company-wrapper {
         padding: 5vh 2.5vh 0 2.5vh;
     }
+
     #main-about img {
         height: 185px;
     }
@@ -978,25 +999,25 @@ input[type="text"]:after {
     }
 
     #services-row p {
-        font-size: 1em;
+        font-size: 0.85em;
         position: absolute;
         top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: rgba(18, 2, 123);
-        font-weight: 700;
+        color: rgb(255, 255, 255);
+        font-weight: 800;
         width: 75%;
         transition: 0.5s;
-        background-color: rgba(255, 255, 255, 0.5);
+        font-family: 'Helvetica', 'Arial', sans-serif;
     }
 
     #services img {
         border: none;
-        -webkit-filter: blur(3.5px);
-        -moz-filter: blur(3.5px);
-        -o-filter: blur(3.5px);
-        -ms-filter: blur(3.5px);
-        filter: blur(3.5px);
+        -webkit-filter: blur(6px);
+        -moz-filter: blur(6px);
+        -o-filter: blur(6px);
+        -ms-filter: blur(6px);
+        filter: blur(6px);
     }
 
     #shipping img {
@@ -1021,12 +1042,12 @@ input[type="text"]:after {
     textarea.form-control {
         height: 100px;
     }
-    
+
     input.form-control {
         font-size: 1em;
     }
-    
-    .document-upload label{
+
+    .document-upload label {
         font-size: 1em;
     }
 
