@@ -207,7 +207,7 @@ img#header {
     font-family: 'Helvetica', 'Arial', sans-serif;
     border-bottom: 3px solid;
     border-color: rgba(18, 2, 123);
-    font-weight: 200px;
+    font-weight: 700;
 }
 
 #main-about p {
@@ -244,46 +244,50 @@ img#header {
     text-align: left;
     font-size: 5em;
     color: rgba(18, 2, 123);
+    font-weight: 700;
     font-family: 'Helvetica', 'Arial', sans-serif;
     border-bottom: 3px solid;
     border-color: rgba(18, 2, 123);
 }
 
-#services-row .container {
-    position: relative;
+#services-row h2 {
     text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-#services-row .container h2 {
-    text-align: left;
     font-size: 3.5rem;
     padding-top: 2vh;
+    padding-bottom: 2vh;
     z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-family: 'Helvetica', 'Arial', sans-serif;
     color: rgba(18, 2, 123);
-    font-weight: 700;
+    font-weight: 500;
+}
+#services-row .row{
+    padding-top: 7.5vh;
+    padding-bottom: 7.5vh;
+}
+#services-row .container{
+    padding: 35px 20px 0 20px;
 }
 
 #services-row p {
-    text-align: justify;
-    font-size: 2.25em;
+    text-align: center;
+    font-size: 2em;
 }
 
-#services img {
+#services-border{
+    border-right: solid 3px rgba(18, 2, 123);
+    border-left: solid 3px rgba(18, 2, 123);
+
+}
+
+#services-row img {
     margin-top: 2vh;
-    width: inherit;
-    height: 300px;
+    height: 250px;
+    margin: auto;    
+    display: block;
 }
 
 #shipping img {
     width: inherit;
-    margin-top: 3vh;
     padding-left: 5vh;
 }
 
@@ -548,9 +552,6 @@ input[type="text"]:after {
 /* T&C End */
 
 @media (max-width:1700px) {
-    #services-row {
-        padding: 19vh 10vh 35vh 10vh;
-    }
 
     /* main formatting */
     .image-box h1 {
@@ -577,6 +578,10 @@ input[type="text"]:after {
     }
     /* about us formatting end */
     /* services formatting */
+    #services-row {
+        padding: 19vh 10vh 28.5vh 10vh;
+    }
+
     #services-row h1{
         font-size: 4em
     }
@@ -592,6 +597,10 @@ input[type="text"]:after {
 }
 
 @media screen and (max-width: 1500px) {
+    #services-row img {
+        height: 150px;
+    }
+
     #footer {
         font-size: 2em;
         text-align: center;
@@ -679,19 +688,15 @@ input[type="text"]:after {
     /* about us formatting end */
     /* services formatting */
     #services-row {
-        padding: 0 10vh 0 10vh;
+        padding: 0 10vh 10vh 10vh;
     }
 
     #services-row .container h2 {
-        text-align: left;
         font-size: 2em;
-        z-index: 1;
-        position: absolute;
     }
 
     #services-row p {
-        text-align: justify;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     /* services formatting end */
@@ -767,8 +772,8 @@ input[type="text"]:after {
         padding: 0 5vh 0 5vh;
     }
 
-    #shipping img {
-        padding-left: 2.5vh;
+    #services-row img {
+        height: 110px;
     }
 
     /* services formatting end */
@@ -806,11 +811,6 @@ input[type="text"]:after {
         padding-bottom: 15px;
     }
 }
-
-@media screen and (max-width:992px) {
-
-}
-
 @media screen and (max-width:991px) {
     .navbar{
         padding-top: 30px;
@@ -896,7 +896,7 @@ input[type="text"]:after {
     #services-row p {
         font-size: 1.25em;
     }
-
+    
     /* services formatting end */
 }
 
@@ -909,8 +909,13 @@ input[type="text"]:after {
 
     /* about us formatting end */
     /* services formatting */
+    #services-row h2{
+        font-size: 1.5em;
+    }
+
     #services-row p {
         text-align: justify;
+        font-size: 1em;
     }
 
     /* services formatting end */
@@ -945,6 +950,10 @@ input[type="text"]:after {
     .navbar-fixed-top {
         position: relative;
         top: auto;
+    }
+
+    #services-border{
+        border: none;
     }
 }
 
@@ -991,30 +1000,11 @@ input[type="text"]:after {
 
     #services-row p {
         font-size: 0.85em;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: rgb(255, 255, 255);
-        font-weight: 800;
-        width: 75%;
-        transition: 0.5s;
-        font-family: 'Helvetica', 'Arial', sans-serif;
     }
 
-    #services img {
-        border: none;
-        -webkit-filter: blur(6px);
-        -moz-filter: blur(6px);
-        -o-filter: blur(6px);
-        -ms-filter: blur(6px);
-        filter: blur(6px);
+    #services-row img {
+        height: 75px;
     }
-
-    #shipping img {
-        padding-left: 1vh;
-    }
-
     /* services formatting end */
     /* Contact Us Formatting Start */
     div#contact-us {
@@ -1064,6 +1054,10 @@ input[type="text"]:after {
         padding-top: 15px;
         padding-bottom: 15px;
         display: block;
+    }
+
+    #services-border{
+        border: none;
     }
 }
 
