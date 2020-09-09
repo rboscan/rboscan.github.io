@@ -972,6 +972,7 @@ input[type="text"]:after {
 }
 
 @media (max-width: 767px) {
+    
     div#contact-us {
         width: 100vw;
     }
@@ -986,9 +987,22 @@ input[type="text"]:after {
         top: auto;
     }
 
+    .about {
+        margin: 7.5vw 0 7.5vw 0;
+    }
+
+    .about p{
+        padding-top: 10px;
+    }
+    
     #services-border{
         border: none;
     }
+    
+    #services-row .container{
+        padding: 35px 20px 20px 20px;
+    }
+    
 }
 
 @media screen and (max-width: 600px) {
