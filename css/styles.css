@@ -618,12 +618,15 @@ input[type="text"]:after {
         font-size: 1.75em;
     }
 
+    #services-row img {
+        height: 230px;
+    }
     /* services formatting end */
 }
 
 @media screen and (max-width: 1500px) {
     #services-row img {
-        height: 150px;
+        height: 129px;
     }
 
     #footer {
@@ -682,6 +685,12 @@ input[type="text"]:after {
 
     /* navbar formatting end */
     /* main formatting */
+    
+    .image-box {
+        bottom: 5vh;
+        left: 10vw;
+    }
+
     img#header {
         height: 36.5vh;
         width: 100vw;
@@ -798,7 +807,7 @@ input[type="text"]:after {
     }
 
     #services-row img {
-        height: 110px;
+        height: 105px;
     }
 
     /* services formatting end */
