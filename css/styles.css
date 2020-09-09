@@ -27,7 +27,7 @@ body div.header {
 }
 
 .navbar.scrolled {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(158, 158, 158);
     padding-bottom: 10px;
     padding-top: 20px;
     height: 95px;
@@ -128,7 +128,7 @@ span.navbar-text h1 {
 
 img#header {
     width: 100%;
-    height: 55vh;
+    height: 100vh;
     position: relative;
     transition: 0.5s;
 }
@@ -136,7 +136,7 @@ img#header {
 .image-box {
     position: absolute;
     transition: 0.5s;
-    bottom: 30px;
+    bottom: 10vh;
     left: 10vw;
 }
 
@@ -308,7 +308,8 @@ img#header {
 div#contact-us {
     position: relative;
     backdrop-filter: blur(10px);
-    background-color: rgba(107, 107, 107, 0.85);
+    background-color:rgba(158, 158, 158, 0.85);
+    ;
     padding: 20px 20px 20px 20px;
     font-family: 'Helvetica', 'Arial', sans-serif;
     display: block;
@@ -338,10 +339,13 @@ form {
 
 textarea.form-control {
     margin-top: 1%;
-    resize: none;
-    height: 180px;
-    overflow: scroll;
+    height: 200px;
+    overflow: auto;
     color: black;
+    border: 0;
+    border: 3px solid rgba(18, 2, 123);
+    outline: 0;
+    background: transparent;
 }
 
 textarea:focus.form-control {
@@ -417,7 +421,6 @@ input[type="text"]:after {
     outline: 0;
     background: transparent;
 }
-
 #form-row input {
     border: 0;
     outline: 0;
@@ -449,7 +452,7 @@ input[type="text"]:after {
 #footer {
     width: 100%;
     font-size: 3em;
-    background-color: grey;
+    background-color: rgba(126, 126, 126, 0.75);
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -475,11 +478,13 @@ input[type="text"]:after {
 #rights-reserved-menu {
     padding-top: 10px;
     font-size: 0.65em;
+    text-decoration: none;
 }
 
 #rights-reserved-menu a {
     color: rgba(18, 2, 123);
     padding: 1vh 1vh 0 1vh;
+    text-decoration: none;
 }
 
 #rights-reserved-2 {
@@ -506,7 +511,7 @@ input[type="text"]:after {
     right: 100%;
     bottom: -5px;
     background: rgba(18, 2, 123);
-    height: 4px;
+    height: 3px;
     transition-property: left right;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
@@ -522,7 +527,7 @@ input[type="text"]:after {
     display: none;
     width: 100%;
     font-size: 3em;
-    background-color: grey;
+    background-color: rgba(126, 126, 126, 0.75);
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
