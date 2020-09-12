@@ -537,6 +537,9 @@ input[type="text"]:after {
 }
 
 /* Privacy Policy */
+.navbar.navbar-expand-lg.navbar-light.fixed-top.privacy-policy{
+    background-color: rgb(158, 158, 158);
+}
 
 #privacy-policy {
     padding-top: 13vh;
@@ -554,6 +557,36 @@ input[type="text"]:after {
     color: rgba(18, 2, 123);
 }
 
+#top-p{
+    padding-top: 30px;
+}
+
+#privacy-policy h2 {
+    font-size: 1.75em;
+    padding: 30px 0 30px 0;
+    font-weight: 575;
+}
+
+#privacy-policy p{
+    font-size: 1.25em;
+}
+#privacy-policy strong{
+    font-weight: 550;
+}
+#sub-p{
+    padding-top: 15px;
+}
+
+#bottom-p{
+    padding-bottom: 60px;
+}
+
+#privacy-policy i {
+    font-style: italic;
+}
+.privacy-footer{
+    bottom: 0;
+}
 /* Privacy Policy End */
 
 /* T&C Start */
@@ -855,6 +888,9 @@ input[type="text"]:after {
     div ul.navbar-nav{
         margin-top: 55px;
     }
+    div ul.navbar-nav.privacy-policy{
+        margin-top: 45px;
+    }
     div ul.navbar-nav img {
         display: none;
     }
@@ -910,7 +946,8 @@ input[type="text"]:after {
     }
 
     #main-about h1 {
-        font-size: 2em
+        font-size: 2em;
+        padding-left: 10px;
     }
 
     #main-about p {
@@ -925,6 +962,7 @@ input[type="text"]:after {
 
     #services-row h1 {
         font-size: 2em;
+        padding-left: 10px;
     }
 
     #services-row p {
@@ -932,6 +970,10 @@ input[type="text"]:after {
     }
     
     /* services formatting end */
+    /* privacy-policy */
+    #privacy-policy{
+        padding-top: 20vh;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -989,6 +1031,7 @@ input[type="text"]:after {
 
     .about {
         margin: 7.5vw 0 7.5vw 0;
+        padding: 0 2.5vh 0 4.5vh;
     }
 
     .about p{
@@ -1026,7 +1069,7 @@ input[type="text"]:after {
     }
 
     #main-about img {
-        height: 185px;
+        height: auto;
     }
 
     #main-about p {
