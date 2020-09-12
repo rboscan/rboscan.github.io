@@ -303,7 +303,7 @@ img#header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     padding: 25vh 0vh 25vh 0vh;
 }
 
@@ -1049,7 +1049,7 @@ input[type="text"]:after {
 @media (max-width: 767px) {
 
     div#contact-us {
-        width: 100vw;
+        width: 100%;
     }
 
     input.form-control {
