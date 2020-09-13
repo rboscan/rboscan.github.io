@@ -960,6 +960,7 @@ input[type="text"]:after {
         border-top: 2px ridge;
         width: 85vw;
         border-color: rgba(18, 2, 123);
+        display: block;
     }
 
     /* navbar formatting end */
