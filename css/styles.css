@@ -3,7 +3,7 @@ html {
 }
 
 body{
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-family: "Baskerville", 'Helvetica', 'sans-serif';
 }
 
 body div.header {
@@ -33,14 +33,14 @@ body div.header {
 }
 
 .navbar.scrolled {
-    background-color: white;
+    background-color: whitesmoke;
     padding-bottom: 10px;
     padding-top: 20px;
     transition: 0.5s;
 }
 
 .navbar.scrolled-2 {
-    background-color: white;
+    background-color: whitesmoke;
     padding-bottom: 15px;
     padding-top: 15px;
     transition: 0.5s;
@@ -305,10 +305,6 @@ div.container#section-title{
 
 #main-contactus {
     position: relative;
-    background-image: url("../css/img/richmond-int3.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     width: 100%;
     padding: 25vh 0vh 25vh 0vh;
 }
@@ -455,7 +451,7 @@ input[type="text"]:after {
 #footer {
     width: 100%;
     font-size: 3em;
-    background-color: rgba(126, 126, 126, 0.75);
+    background-color: rgba(126, 126, 126,.75);
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -494,6 +490,16 @@ input[type="text"]:after {
     font-size: 0.5em;
     color: rgba(18, 2, 123);
 }
+
+.footer-contact{
+    padding: 0;
+    text-align: end;
+}
+
+.footer-contact p{
+    padding: 10px 0 10px 0;
+}
+
 
 .underline {
     display: inline;
@@ -537,7 +543,7 @@ input[type="text"]:after {
 
 /* Privacy Policy */
 .navbar.navbar-expand-lg.navbar-light.fixed-top.privacy-policy {
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 #privacy-policy {
@@ -636,6 +642,10 @@ input[type="text"]:after {
 
     #main-about p {
         font-size: 1.75em
+    }
+
+    .container#about-wrapper{
+        padding: 0 15vw 0 15vw;
     }
 
     /* about us formatting end */
@@ -923,7 +933,7 @@ input[type="text"]:after {
     }
 
     .navbar-nav {
-        background: white;
+        background: whitesmoke;
     }
 
     #logo-contact2 {
