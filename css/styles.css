@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
 body div.header {
     font-size: 100%;
     padding-top: 12.5px;
@@ -9,7 +13,6 @@ body div.header {
     background-color: grey;
     width: 100%;
     text-align: center;
-    font-family: 'Helvetica', 'Arial', sans-serif;
     color: rgba(18, 2, 123);
     font-weight: 900;
 }
@@ -24,19 +27,22 @@ body div.header {
 
 .navbar {
     background-color: rgba(255, 255, 255, 0);
-    height: 95px;
     padding-bottom: 10px;
     padding-top: 20px;
-    width: 100vw;
     transition: 0.5s;
 }
 
 .navbar.scrolled {
-    background-color: rgb(158, 158, 158);
+    background-color: white;
     padding-bottom: 10px;
     padding-top: 20px;
-    height: 95px;
-    width: 100vw;
+    transition: 0.5s;
+}
+
+.navbar.scrolled-2 {
+    background-color: white;
+    padding-bottom: 15px;
+    padding-top: 15px;
     transition: 0.5s;
 }
 
@@ -75,7 +81,6 @@ ul.navbar-nav {
     padding: 15px 70px 15px 70px;
     margin-top: 15px;
     font-size: 1.25vw;
-    font-family: 'Helvetica', 'Arial', sans-serif;
     box-shadow: none;
     font-weight: 600;
     cursor: pointer;
@@ -88,7 +93,6 @@ ul.navbar-nav {
     font-size: 1.25vw;
     padding: 15px 70px 15px 70px;
     margin-top: 1 5px;
-    font-family: 'Helvetica', 'Arial', sans-serif;
     box-shadow: none;
     font-weight: 600;
     cursor: pointer;
@@ -116,7 +120,6 @@ span.navbar-text {
 span.navbar-text h1 {
     color: rgba(18, 2, 123);
     font-weight: 700;
-    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 #logo-contact2 {
@@ -152,7 +155,6 @@ img#header {
     font-size: 5em;
     color: white;
     font-weight: 1000;
-    font-family: 'Helvetica', 'Arial', sans-serif;
     text-align: left;
     z-index: 1;
 }
@@ -161,14 +163,12 @@ img#header {
     font-size: 3.5em;
     color: white;
     font-weight: 1000;
-    font-family: 'Helvetica', 'Arial', sans-serif;
     z-index: 1;
 }
 
 .col-sm.description {
     color: black;
     font-size: 2.5em;
-    font-family: 'Helvetica', 'Arial', sans-serif;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -176,7 +176,6 @@ img#header {
 
 .col-sm.description strong {
     color: black;
-    font-family: 'Helvetica', 'Arial', sans-serif;
     font-weight: 700;
 }
 
@@ -215,14 +214,12 @@ div.container#section-title{
     text-align: left;
     font-size: 5em;
     color: rgba(18, 2, 123);
-    font-family: 'Helvetica', 'Arial', sans-serif;
     border-bottom: 3px solid;
     border-color: rgba(18, 2, 123);
     font-weight: 700;
 }
 
 #main-about p {
-    font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 2.25em;
     text-align: justify;
 }
@@ -256,7 +253,6 @@ div.container#section-title{
     font-size: 5em;
     color: rgba(18, 2, 123);
     font-weight: 700;
-    font-family: 'Helvetica', 'Arial', sans-serif;
     border-bottom: 3px solid;
     border-color: rgba(18, 2, 123);
 }
@@ -267,7 +263,6 @@ div.container#section-title{
     padding-top: 2vh;
     padding-bottom: 2vh;
     z-index: 1;
-    font-family: 'Helvetica', 'Arial', sans-serif;
     color: rgba(18, 2, 123);
     font-weight: 500;
 }
@@ -324,7 +319,6 @@ div#contact-us {
     background-color: rgba(158, 158, 158, 0.85);
     ;
     padding: 20px 20px 20px 20px;
-    font-family: 'Helvetica', 'Arial', sans-serif;
     display: block;
     max-width: 900px;
     border-radius: 5px;
@@ -334,7 +328,6 @@ div#contact-us p {
     color: rgba(18, 2, 123);
     font-size: 2.5em;
     font-weight: 700;
-    font-family: 'Helvetica', 'Arial', sans-serif;
     text-align: center;
     padding-bottom: 15px;
 }
@@ -348,7 +341,6 @@ form {
     font-size: 2em;
     color: rgba(18, 2, 123);
     font-weight: 600;
-    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 textarea.form-control {
@@ -364,7 +356,6 @@ textarea.form-control {
 
 textarea:focus.form-control {
     color: black;
-    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 input.form-control {
@@ -372,7 +363,6 @@ input.form-control {
     margin-bottom: 1%;
     margin-top: 1%;
     margin-left: auto;
-    font-family: 'Helvetica', 'Arial', sans-serif;
     color: black;
     font-size: 1.75em;
     transition: 0.5s;
@@ -380,7 +370,6 @@ input.form-control {
 
 input:focus.form-control {
     color: black;
-    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 .form-control::placeholder {
@@ -449,7 +438,6 @@ input[type="text"]:after {
 }
 
 .center-button {
-    font-family: 'Helvetica', 'Arial', sans-serif;
     margin-top: 1vh;
     display: flex;
     align-items: center;
@@ -473,13 +461,12 @@ input[type="text"]:after {
     padding-bottom: 15px;
     color: rgba(18, 2, 123);
     font-weight: 600;
-    font-family: 'Helvetica', 'Arial', sans-serif;
     display: block;
 }
 
 #rights-reserved {
     padding-top: 10px;
-    font-size: 0.75em;
+    font-size: 0.65em;
 }
 
 #rights-reserved a {
@@ -491,7 +478,7 @@ input[type="text"]:after {
 }
 
 #rights-reserved-menu {
-    padding-top: 10px;
+    padding: 10px;
     font-size: 0.65em;
     text-decoration: none;
 }
@@ -503,13 +490,9 @@ input[type="text"]:after {
 }
 
 #rights-reserved-2 {
-    padding-top: 10px;
+    padding: 20px 0 20px 0;
     font-size: 0.5em;
-}
-
-#rights-reserved-2 {
     color: rgba(18, 2, 123);
-    padding: 1vh 1vh 0 1vh;
 }
 
 .underline {
@@ -542,18 +525,19 @@ input[type="text"]:after {
     display: none;
     width: 100%;
     font-size: 3em;
-    background-color: rgba(126, 126, 126, 0.75);
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
     color: rgba(18, 2, 123);
     font-weight: 600;
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-image: linear-gradient(transparent,white, rgba(126, 126, 126, 0.75));
+}
+
+#footer-reordered-menu{
+    padding: 20px 0 0px 0;
 }
 
 /* Privacy Policy */
 .navbar.navbar-expand-lg.navbar-light.fixed-top.privacy-policy {
-    background-color: rgb(158, 158, 158);
+    background-color: white;
 }
 
 #privacy-policy {
@@ -564,7 +548,6 @@ input[type="text"]:after {
 #privacy-policy h1 {
     font-size: 3em;
     color: rgba(18, 2, 123);
-    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 #privacy-policy hr {
@@ -618,7 +601,6 @@ input[type="text"]:after {
 #terms h1 {
     font-size: 3em;
     color: rgba(18, 2, 123);
-    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 #terms hr {
@@ -705,7 +687,6 @@ input[type="text"]:after {
         height: 75px;
         padding-bottom: 10px;
         padding-top: 10px;
-        width: 100vw;
         transition: 0;
     }
 
@@ -713,7 +694,6 @@ input[type="text"]:after {
         height: 75px;
         padding-bottom: 10px;
         padding-top: 10px;
-        width: 100vw;
         transition: 0;
     }
 
@@ -749,7 +729,7 @@ input[type="text"]:after {
     }
 
     img#header {
-        height: 36.5vh;
+        height: 100vh;
         width: 100vw;
         position: relative;
         transition: 0.5s;
@@ -907,11 +887,11 @@ input[type="text"]:after {
 
     /* navbar formatting */
     .navbar{
-        padding: 30px 0 20px 0;
+        padding: 15px 0 15px 0;
     }
 
     .navbar.scrolled {
-        padding: 30px 0 20px 0;
+        padding: 15px 0 15px 0;
     }
 
     div ul.navbar-nav {
@@ -929,7 +909,8 @@ input[type="text"]:after {
     .navbar-brand-collapsed {
         display: block;
         position: absolute;
-        left: 44.5%;
+        left: 50%;
+        transform: translateX(-50%);
         height: 45px;
     }
 
@@ -946,7 +927,7 @@ input[type="text"]:after {
     }
 
     #logo-contact2 {
-        font-size: 1.25em;
+        font-size: 1em;
         display: block;
         word-spacing: 10px;
         padding-bottom: 2vh;
@@ -963,6 +944,13 @@ input[type="text"]:after {
         width: 85vw;
         border-color: rgba(18, 2, 123);
         display: block;
+    }
+
+    #contact-collapse{
+        padding: 10px 0 10px 0;
+        font-weight: 700px;
+        font-size: 1.5em;
+        text-align: center;
     }
 
     /* navbar formatting end */
@@ -1009,7 +997,11 @@ input[type="text"]:after {
         font-size: 0.75em;
         padding: 2px;
     }
-
+    .document-upload button:hover {
+        font-size: 0.75em;
+        background-color: rgba(18, 2, 123);
+    }
+    /* contact us formatting end */
     .center-button .btn-lg {
         font-size: 1em;
     }
@@ -1036,6 +1028,7 @@ input[type="text"]:after {
     /* about us formatting */
     #main-about p {
         text-align: justify;
+
     }
 
     /* about us formatting end */
@@ -1050,6 +1043,11 @@ input[type="text"]:after {
     }
 
     /* services formatting end */
+    /* footer start */
+    #rights-reserved-menu{
+        font-size: 0.50em
+    }
+    /* footer end */
 }
 
 @media screen and (max-width: 769px) {
@@ -1111,7 +1109,7 @@ input[type="text"]:after {
     }
 
     #main-about {
-        padding: 10vh 0 0 0;
+        padding: 11vh 0 0 0;
     }
 
     #company-wrapper {
@@ -1129,7 +1127,7 @@ input[type="text"]:after {
     /* index formatting end */
     /* services formatting */
     #services-row {
-        padding: 0 0 0 0;
+        padding: 11vh 0 0 0;
     }
 
     #services-row .container h2 {
@@ -1140,7 +1138,7 @@ input[type="text"]:after {
     }
 
     #services-row p {
-        font-size: 0.85em;
+        font-size: 1em;
     }
 
     #services-row img {
@@ -1174,7 +1172,12 @@ input[type="text"]:after {
         font-size: 0.75em;
     }
 
-
+    #main-contactus {
+        position: relative;
+        background-image: none;
+        width: 100%;
+        padding: 15vh 0vh 15vh 0vh;
+    }
     /* Contact Us Formatting End */
     /* Footer */
     #footer {
@@ -1186,22 +1189,23 @@ input[type="text"]:after {
 
     #rights-reserved-menu {
         padding-top: 10px;
-        font-size: 0.65em;
+        font-size: 0.50em;
     }
 
 }
 
 @media screen and (max-width: 575px) {
+    
     #footer {
         display: none;
     }
 
     #footer-reordered {
+        padding: 0;
         font-size: 1.75em;
         text-align: center;
-        padding-top: 15px;
-        padding-bottom: 15px;
         display: block;
+        background-image: linear-gradient(transparent, rgba(126, 126, 126, 0.75));
     }
 
     #services-border {
@@ -1216,7 +1220,7 @@ input[type="text"]:after {
     }
 
     .image-box h2 {
-        font-size: 1em;
+        font-size: 0.85em;
         transition: 0.5s;
     }
 }
