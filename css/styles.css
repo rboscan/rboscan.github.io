@@ -4,6 +4,7 @@ html {
 
 body{
     font-family: "Baskerville", 'Helvetica', 'sans-serif';
+    background-color: whitesmoke;
 }
 
 body div.header {
@@ -33,14 +34,14 @@ body div.header {
 }
 
 .navbar.scrolled {
-    background-color: whitesmoke;
+    background-color: white;
     padding-bottom: 10px;
     padding-top: 20px;
     transition: 0.5s;
 }
 
 .navbar.scrolled-2 {
-    background-color: whitesmoke;
+    background-color: white;
     padding-bottom: 15px;
     padding-top: 15px;
     transition: 0.5s;
@@ -547,7 +548,7 @@ input[type="text"]:after {
 }
 
 #privacy-policy {
-    padding-top: 13vh;
+    padding-top: 120px;
     padding-bottom: 10vh;
 }
 
@@ -600,7 +601,7 @@ input[type="text"]:after {
 /* T&C Start */
 
 #terms {
-    padding-top: 13vh;
+    padding-top: 120px;
     padding-bottom: 10vh;
 }
 
@@ -636,6 +637,10 @@ input[type="text"]:after {
 
     /* main formatting end */
     /* about us formatting start */
+    #main-about {
+        padding: 16vh 10vh 0 10vh;
+    }
+
     #main-about h1 {
         font-size: 4em;
     }
@@ -933,7 +938,7 @@ input[type="text"]:after {
     }
 
     .navbar-nav {
-        background: whitesmoke;
+        background: white;
     }
 
     #logo-contact2 {
@@ -1020,7 +1025,7 @@ input[type="text"]:after {
 
     /* privacy-policy */
     #privacy-policy {
-        padding-top: 20vh;
+        padding-top: 120px;
     }
     #privacy-policy h1{
         font-size: 1.75em;
